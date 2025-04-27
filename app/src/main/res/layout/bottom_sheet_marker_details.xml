@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/markerMainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            app:cardCornerRadius="67dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/petProfileImageMarker"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.github.mmin18.widget.RealtimeBlurView
+                    android:id="@+id/realtimeBlurView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@id/markerSecondLinearLayout"
+                    app:layout_constraintEnd_toEndOf="@id/markerSecondLinearLayout"
+                    app:layout_constraintStart_toStartOf="@id/markerSecondLinearLayout"
+                    app:layout_constraintTop_toTopOf="@id/markerSecondLinearLayout"
+                    app:realtimeBlurRadius="20dp"
+                    app:realtimeOverlayColor="#00FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/markerSecondLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/marker_bottom_sheet_shape"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/markerStarConstrainLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/markerStarImageView"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_star" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/petnameTextViewMarker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltw23bold"
+                        android:gravity="center_horizontal"
+                        android:text="Gerdoo"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/petDetailUnderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltprolight"
+                        android:gravity="center_horizontal"
+                        android:text="Female, Golden Retriever"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/markerDistanceTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltw23regular"
+                        android:gravity="center_horizontal"
+                        android:text="5 miles away"
+                        android:textColor="@color/textBlue"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/dividertop"
+                        android:layout_width="1dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/textGrayLight" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardViewUserImageMarker"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        app:cardCornerRadius="36dp">
+
+                        <ImageView
+                            android:id="@+id/imageUserProfileMarker"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/petownerNameTextViewMarker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltw23bold"
+                        android:gravity="center_horizontal"
+                        android:text="Sarah"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/petownerDetailUnderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltw23regular"
+                        android:gravity="center_horizontal"
+                        android:text="Gerdoo's Mommy"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/markerUserCityTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/dinnextltw23regular"
+                        android:gravity="center_horizontal"
+                        android:text="Tehran"
+                        android:textColor="@color/textBlue"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/dividerButtom"
+                        android:layout_width="1dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/textGrayLight" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|fill"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="96dp"
+                                    android:layout_height="96dp"
+                                    android:layout_gravity="center"
+                                    app:cardCornerRadius="36dp">
+
+                                    <ImageView
+                                        android:id="@+id/petGalleryImage6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        tools:srcCompat="@tools:sample/avatars" />
+                                </androidx.cardview.widget.CardView>
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/dividerButtom2"
+                        android:layout_width="1dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@color/textGrayLight" />
+
+                    <Button
+                        android:id="@+id/wagATaleButton"
+                        android:layout_width="212dp"
+                        android:layout_height="29dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/ic_button_background"
+                        android:fontFamily="@font/dinnextltw23medium"
+                        android:gravity="center"
+                        android:text="Wag a tale!"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

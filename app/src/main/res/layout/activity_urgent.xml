@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.petplore.app.UrgentActivity">
+    <ImageView
+        android:id="@+id/logoTopLeft"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_petplore_logo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rippleCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/centerButton"
+
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_urgent_radar_pulse"
+            android:transitionName="centerButtonTransitionName"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/rippleCenter"
+            app:layout_constraintEnd_toEndOf="@id/rippleCenter"
+            app:layout_constraintStart_toStartOf="@id/rippleCenter"
+            app:layout_constraintTop_toTopOf="@id/rippleCenter" />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="29dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/centerButton"
+            android:layout_alignStart="@+id/centerButton"
+            android:layout_alignLeft="@+id/centerButton"
+            android:layout_alignEnd="@+id/centerButton"
+            android:layout_alignRight="@+id/centerButton"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="@id/centerButton"
+            app:layout_constraintStart_toStartOf="@id/centerButton"
+            app:layout_constraintTop_toBottomOf="@+id/centerButton"
+            app:srcCompat="@drawable/ic_arrows_vector" />
+
+        <LinearLayout
+            android:id="@+id/linearRadarPageButtons"
+            android:layout_width="240dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/ic_radar_pages_button_back"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/placesRadarButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/dinnextltw23medium"
+                android:background="@android:color/transparent"
+                android:gravity="center_horizontal"
+                android:text="Places"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/peopleRadarButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/dinnextltw23medium"
+                android:gravity="center_horizontal"
+                android:text="People"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/urgentRadarButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ic_urgent_radar_button_background"
+                android:fontFamily="@font/dinnextltw23medium"
+                android:gravity="center_horizontal"
+                android:text="Urgent"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:transitionName="radarPageSelectedButtonTransition"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/staticMarkersPlaceHolder1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/lightGray"
+        app:itemIconTint="@drawable/nav_botton_item_colors"
+        app:itemTextColor="@drawable/nav_botton_item_colors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/main_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

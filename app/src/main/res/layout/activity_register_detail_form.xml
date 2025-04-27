@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.petplore.app.RegisterDetailFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Personal Info"
+                    android:textColor="#4D4D4D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalFirstNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="First name"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/personalFirstNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalLastNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Last name"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/personalLastNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalGenderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Gender"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/personalGenderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/accountGenders" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalBirthdayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Birthday"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/personalBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalCountryTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Country"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/personalCountryEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalStateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Province/State"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/personalStateEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/personalCityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="City"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/personalCityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/personalDivider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Account Info"
+                    android:textColor="#4D4D4D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+
+                <View
+                    android:id="@+id/accountDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/accountUsernameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Username"
+                            android:textColor="#4D4D4D"
+                            android:textSize="18sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <EditText
+                            android:id="@+id/accountUsernameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/accountDivider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#989898" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/accountEmailTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Email"
+                            android:textColor="#4D4D4D"
+                            android:textSize="18sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <EditText
+                            android:id="@+id/accountEmailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/accountImageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountBioTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Bio"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/accountBioEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountPasswordTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Password"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/accountPasswordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="end"
+                    android:inputType="textPassword" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountPhoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Phone"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/accountPhoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPhonetic" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountRelationshipTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Relationship"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/accountRelationshipSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/accountRelationship" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/accountInstagramTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Instagram"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/accountInstagramEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="end"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/accountDivider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:text="Pet Info"
+                    android:textColor="#4D4D4D"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:autoSizeTextType="uniform" />
+
+                <View
+                    android:id="@+id/petDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#989898" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/petImageView1"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/petNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Name"
+                            android:textColor="#4D4D4D"
+                            android:textSize="18sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <EditText
+                            android:id="@+id/petNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:ems="10"
+                            android:gravity="end"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/petDivider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#989898" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/petNicknameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="Nickname"
+                            android:textColor="#4D4D4D"
+                            android:textSize="18sp"
+                            app:autoSizeTextType="uniform" />
+
+                        <EditText
+                            android:id="@+id/petNicknameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="end"
+                            android:ems="10"
+                            android:inputType="textPersonName" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:minHeight="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petBioTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Bio"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/petBioEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petTypeTextView"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Type"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petTypeDogToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_dog_type_toggle"
+                        android:checked="true"
+                        android:scaleType="centerCrop"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petTypeCatToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_cat_type_toggle"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/petDivider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petBreedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Breed"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/petBreedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:ems="10"
+                    android:inputType="textPhonetic" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petGenderTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Gender"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/petGenderSpinder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/petGenders" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petSizeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Size"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/petSizeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/petSizes" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petBirthdayTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Birthday"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/petBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petGetsalongTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Gets along with"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/linearLayout4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petAlongPeopleToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_people_type_toggle"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/linearLayout5"
+                    app:layout_constraintStart_toEndOf="@id/linearLayout3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petAlongChildrenToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_children_type_toggle"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginLeft="200dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/linearLayout6"
+                    app:layout_constraintStart_toEndOf="@id/linearLayout4"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petAlongDogsToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_getalongdogs_type_toggle"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_border_line"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/linearLayout5"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/petAlongCatsToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/toggles_cat_type_toggle"
+                        android:foregroundGravity="right"
+                        android:gravity="right"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/petDivider9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petNeuteredTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Neutered"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/petNeturedSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/yesOrNo" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petPersonalityTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Personality"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/petPersonalityEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petEducationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Education"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/petEducationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider12"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petMicrochippedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Microchipped"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Spinner
+                    android:id="@+id/petMicrochippedSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/yesOrNo" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider13"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petInstagramTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Instagram"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+                <EditText
+                    android:id="@+id/petInstagramEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="end"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/petDivider14"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="#989898" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/petPhotosTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Photos"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="uniform" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/petImageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                    <ImageView
+                        android:id="@+id/petImageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                    <ImageView
+                        android:id="@+id/petImageView4"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/petImageView5"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                    <ImageView
+                        android:id="@+id/petImageView6"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                    <ImageView
+                        android:id="@+id/petImageView7"
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_defaultcirclepicholder" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+            <View
+                android:id="@+id/petDivider15"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="40dp"
+                android:background="#989898" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_button_background"
+                android:fontFamily="@font/dinnextltw23medium"
+                android:text="Submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

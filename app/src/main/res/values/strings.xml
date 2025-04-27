@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">petplore</string>
+    <string name="register_new_account_text">Register new account</string>
+    <string name="email_placeholder">Email</string>
+    <string name="passwordInput_placeHolder">Password</string>
+    <string name="register_button_text">Register</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_to_your_account_text">Login to your account</string>
+    <string name="get_to_login_page">Have an account?</string>
+    <string name="create_new_account_text">Create your account now!</string>
+    <string name="phone_number_placeholder">phone no: +15410000000</string>
+    <string name="enter_your_phone_number">enter your phone number</string>
+    <string name="login_by_phone_number">login by phone number</string>
+    <string name="facebook_app_id">478839726179884</string>
+    <string name="fb_login_protocol_scheme">fb478839726179884</string>
+    <string name="PetGetAlongPeopleText">People</string>
+    <string name="PetGetAlongChildrenText">Children</string>
+    <string name="PetGetsAlongDogsString">Dogs</string>
+    <string name="PetGetsAlongCatsText">Cats</string>
+
+    <string-array name="yesOrNo">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="accountGenders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="petGenders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="petSizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="accountRelationship">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>
